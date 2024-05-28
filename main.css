@@ -1,0 +1,343 @@
+@charset "utf-8";
+@font-face{
+    font-family: 'JM';
+    src: url('./JetBrainsMono-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (min-width: 481px){
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    ul, ol{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    .sub-title-text-arial{
+        font: bold 32px/1 "arial";
+    }
+    .normal-text-JM{
+        font: 16px/1.3 "JM";
+    }
+    .bold{
+        font-weight: bold;
+    }
+    
+    header{
+        width: 100%;
+        
+    }
+    header .inner{
+        width: 1180px;
+        height: 120px;
+        margin: 0px auto; 
+        position: relative;
+    }
+    header .inner h1{
+        position: absolute;
+        left: 0px;
+        bottom: 15px;
+    }
+    header .inner h1 a{
+        font: bold 48px/1 "JM";
+        color: #000;
+    }
+    
+    header .inner #gnb{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    
+        display: flex;
+    }
+    
+    header .inner #gnb li a{
+        display: block;
+        
+        color: #555;
+        padding: 20px 40px;
+        transition: all 0.5s;
+    }
+    header .inner #gnb li a:hover{
+        background: #555;
+        color: #fff; 
+    }
+    
+    section{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section .content{
+        width: 840px;
+        margin: auto;
+        padding: 60px;
+    
+        display: none
+    }
+    section .content.active{
+        display: block;
+    }
+    section .content h1{
+        margin-bottom: 20px;
+    }
+    section .content .title-line-div{
+        width: 50%;
+        margin-bottom: 30px;
+        border: solid 1.5px #000;
+    }
+    section .content .inner-content{
+        width: 720px;
+        height: 231px;
+        margin-bottom: 60px;
+
+        overflow: hidden;
+        display: flex;
+    }
+    section .content .inner-content img{
+        width: 350px;
+        height: auto;
+        margin-right: 20px;
+    }
+    
+    section .skill-container {
+        width: 100%;
+        margin: 0 auto;
+        background: #fff;
+    
+        padding: 20px;
+    }
+    
+    section .skill-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    section .skill{
+        margin: 0 0 30px;
+    }
+    
+    section .skill h3 {
+        font: bolder 22px/1 "JM";
+        margin-bottom: 20px;
+    }
+    
+    section .skill-bar {
+        background: #e0e0e0;
+        border-radius: 8px;
+        overflow: hidden;
+    
+        position: relative;
+    }
+    
+    section .skill-level {
+        background: #555;
+        height: 23px;
+        line-height: 23px;
+        color: #fff;
+        text-align: center;
+        border-radius: 8px 0 0 8px;
+        width: 0;
+        transition: width 1.3s ease-in-out;
+    }
+    
+    footer{
+        width: 100%;
+        padding: 50px 0px;
+        border-top: 1.5px solid #000;
+    }
+    footer .inner{
+        width: 1180px;
+        margin: 0px auto;
+    }
+    footer .inner .upper{
+        width: 100%;
+        border-bottom: 1.5px solid #777;
+        padding-bottom: 20px;
+    }
+    footer .inner .upper::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    footer .inner .lower{
+        width: 100%;
+        padding-top: 20px;
+    }
+    footer .inner .lower p{
+        width: 100%;
+        font: 12px/1 "arial";
+        color: #777;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        min-width: 360px;
+    }
+    ul, ol{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    .sub-title-text-arial{
+        font: bold 24px/1 "arial";
+    }
+    .normal-text-JM{
+        font: 14px/1.3 "JM";
+    }
+    .bold{
+        font-weight: bold;
+    }
+    header{
+        width: 100%;
+        border-bottom: 1.5px solid #000;
+    }
+    header .inner{
+        width: 80%;
+        height: 100%;
+        margin: 0px auto; 
+
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    header .inner h1 a{
+        font: bold 24px/1 "JM";
+        color: #000000;
+    }
+    
+    header .inner #gnb{
+        margin-top: 20px;
+        display: flex;
+    }
+    
+    header .inner #gnb li a{
+        display: block;
+        
+        color: #555;
+        padding: 10px 20px;
+        transition: all 0.5s;
+    }
+    header .inner #gnb li a:hover{
+        background: #555;
+        color: #fff; 
+    }
+    
+    section{
+        width: 100%;
+
+    }
+    section .content{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        padding: 30px;
+    
+        display: none
+    }
+    section .content.active{
+        display: block;
+    }
+    section .content h1{
+        margin-bottom: 20px;
+    }
+    section .content .title-line-div{
+        width: 50%;
+        margin-bottom: 30px;
+        border: solid 1.5px #000;
+    }
+    section .content .inner-content{
+        margin-bottom: 60px;
+    }
+    section .content .inner-content img{
+        width: 100%;
+        height: auto;
+        margin-right: 20px;
+    }
+    
+    section .skill-container {
+        width: 100%;
+        margin: 0 auto;
+        background: #fff;
+    
+        padding: 20px;
+    }
+    
+    section .skill-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    section .skill{
+        margin: 0 0 20px;
+    }
+    
+    section .skill h3 {
+        font: bolder 20px/1 "JM";
+        margin-bottom: 10px;
+    }
+    
+    section .skill-bar {
+        background: #e0e0e0;
+        border-radius: 8px;
+        overflow: hidden;
+    
+        position: relative;
+    }
+    
+    section .skill-level {
+        background: #202020;
+        height: 23px;
+        line-height: 23px;
+        color: #fff;
+        text-align: center;
+        border-radius: 8px 0 0 8px;
+        width: 0;
+        transition: width 1.3s ease-in-out;
+    }
+    
+    footer{
+        width: 100%;
+        padding: 50px 0px;
+        
+    }
+    footer .inner{
+        width: 80%;
+        margin: 0px auto;
+    }
+    footer .inner .upper{
+        width: 100%;
+        border-bottom: 1.5px solid #777;
+        padding-bottom: 20px;
+    }
+    footer .inner .upper::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    footer .inner .lower{
+        width: 100%;
+        padding-top: 20px;
+    }
+    footer .inner .lower p{
+        width: 100%;
+        font: 12px/1 "arial";
+        color: #777;
+    }
+}
